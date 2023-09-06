@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="css/css.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9e66b040ac.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg  nav-details">
+        <div class="container">
+          <a class="navbar-brand" href="#">Market</a>
+          <div class="navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item space-gap">
+                <a class="nav-link active" aria-current="page" href="#"><img src="img/US-FLAG.png"  alt="language" width="24px" height="24px">  EN</a>
+              </li>
+              <form class="searchbar-size d-flex " role="search">
+                <input class="form-control  search-bar-details" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn  search-button-details" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </form>
+              <li class="nav-item space-gap-1">
+                <a class="nav-link active" href="#">categories</a>
+              </li>
+              <li class="nav-item space-gap-1">
+                <a class="nav-link active" href="#"><i class="fa-solid fa-location-dot" style="color: #101114;"></i> deliver
+                    to...</a>
+              </li>
+              <li class="nav-item dropdown space-gap-1">
+                <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-regular fa-user" style="color: #0c0f12;"></i>
+                  sign in
+                </a>
+                <ul class="dropdown-menu">
+                  <div class="signin-dropdown">
+                    <i class="fa-solid fa-user font-size"></i>
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1"><div class="email-box-size"><i class="fa-solid fa-envelope"></i></div></label>
+                        <input type="email" class="form-control email-form-size" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1"><div class="password-box-size"><i class="fa-solid fa-lock"></i></div></label>
+                        <input type="password" class="form-control password-form-size" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                      <div class="form-check remember-me-position">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label " for="exampleCheck1">remember my password</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary login-button-position">Log in</button>
+                    </form>
+                  </div>
+                </ul>
+              </li>
+              <li class="nav-item space-gap-1">
+                <a class="nav-link active" aria-disabled="enable" href="#"><i class="fa-solid fa-cart-shopping" style="color: #12161c;"></i> cart</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <nav class="smart-phone">
+          <div class="lay-out" id="lay-out"></div>
+          <div class="close-bar-button" id="closer">
+            <button class="closse-button-details"><i class="fa-solid fa-x"></i></button>
+          </div>
+          <div class="smart-phone-nav-bar-details">
+          <div class="bar-button" id="opener">
+            <button class="bar-button-details"><i class="fa-solid fa-bars" style="color: #111722;"></i></button>
+          </div>
+          <div class="search-bar">
+            <form class="searchbar-size d-flex " role="search">
+              <input class="form-control  search-bar-details" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn  search-button-details" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+          </div>
+          </div>       
+          <div class="bar" id="bar">
+            <ul class="list-detail-1">
+              <li class="list-detail"><a class="nav-link active" href="#"  aria-expanded="false"><i class="fa-regular fa-user" style="color: #0c0f12;"></i> sign in</a></li>
+              <hr>
+              <li class="list-detail"><a class="nav-link active" aria-disabled="enable" href="#"><i class="fa-solid fa-cart-shopping" style="color: #12161c;"></i> cart</a></li>
+              <hr>
+              <li class="list-detail"><a class="nav-link active" href="#"><i class="fa-solid fa-location-dot" style="color: #101114;"></i> deliver to...</a></li>
+              <hr>
+              <li class="list-detail"><a class="nav-link active" aria-disabled="enable" href="#">categories</a></li>
+              <hr>
+              <li class="list-detail"><a class="nav-link active" aria-current="page" href="#"><img src="img/US-FLAG.png"  alt="language" width="24px" height="24px">  EN</a></li>
+              <hr>
+            </ul>
+          </div>
+      </nav>
+      <div id="carouselExampleControls" class="carousel slide slider-position" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item carousel-1 active">
+            <img src="img/gamingpc1.jpg" class="d-block w-100 small-screen" alt="..." width="100%" height="550px">
+          </div>
+          <div class="carousel-item carousel-1">
+            <img src="img/gamingpc2.jpg" class="d-block w-100 small-screen" alt="..." width="100%" height="550px">
+          </div>
+          <div class="carousel-item  carousel-1">
+            <img src="img/gamingpc3.png" class="d-block w-100 small-screen" alt="..." width="100%" height="550px">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="offers">
+        <div class="topic-line-l"></div><div class="t-1">Offers</div><div class="topic-line-r"></div>
+      </div>
+      <div id="carouselExampleCaptions" class="carousel carousel-dark slide  multipe-slider-size" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">   
+          <div class="carousel-item active">
+           <div class="card-group">
+            <div class="card">
+            <a href="#" class="offer-link-style">
+             <img src="img/ssd1.jpg" class="card-img-top" alt="..." >
+             <div class="card-body">
+              <h5 class="card-title">Model</h5>
+             <h5 class="card-title">Price:XXX</h5>
+          </div>
+        </a>
+        </div>
+        <div class="card">
+          <a href="#" class="offer-link-style">
+          <img src="img/AMD_Radeon_RX_6800_GPU_graphics_card_price_drop_deal.jpg" class="card-img-top" alt="..." >
+          <div class="card-body">
+            <h5 class="card-title">Model</h5>
+            <h5 class="card-title">Price:XXX</h5>
+          </div>
+        </a>
+        </div>
+        <div class="card">
+          <a href="#" class="offer-link-style">
+          <img src="img/cpu.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Model</h5>
+            <h5 class="card-title">Price:XXX</h5>
+          </div>
+        </a>
+        </div>
+        <div class="card">
+          <a href="#" class="offer-link-style">
+          <img src="img/corsair-rm650-650w-80-gold-full-moduler-135mm-fanli-psu-ca1ab7.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Model</h5>
+            <h5 class="card-title">Price:XXX</h5>
+          </div>
+        </div>
+      </a>
+      </div>
+          </div>
+          <div class="carousel-item">
+      <div class="card-group">
+        <div class="card">
+        <a href="#" class="offer-link-style">
+          <img src="img/AMD_Ryzen_5_2600_(39851733273).jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Model</h5>
+            <h5 class="card-title">Price:XXX</h5>
+          </div>
+        </a>
+        </div>
+        <div class="card">
+          <a href="#" class="offer-link-style">
+          <img src="img/71KPRTomMEL.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Model</h5>
+            <h5 class="card-title">Price:XXX</h5>
+          </div>
+        </a>
+        </div>
+        <div class="card">
+          <a href="#" class="offer-link-style">
+          <img src="img/63501897b2a883.65527308_kelnfmqjphoig_500.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Model</h5>
+            <h5 class="card-title">Price:XXX</h5>
+          </div>
+        </a>
+        </div>
+        <div class="card">
+          <a href="#" class="offer-link-style">
+          <img src="img/main-qimg-309e20c5c5e761f8740106821e269d3c-lq.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Model</h5>
+            <h5 class="card-title">Price:XXX</h5>
+          </div>
+        </a>
+        </div>
+      </div>     
+          </div>
+          <div class="carousel-item">
+      <div class="card-group">
+        <div class="card">
+          <a href="#" class="offer-link-style">
+          <img src="img/m2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Model</h5>
+            <h5 class="card-title">Price:XXX</h5>
+          </div>
+        
+        </div>
+        <div class="card">
+          <a href="#" class="offer-link-style">
+          <img src="img/download.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Model</h5>
+            <h5 class="card-title">Price:XXX</h5>
+          </div>
+        </a>
+        </div>
+        <div class="card">
+        <a href="#" class="offer-link-style">
+          <img src="img/evga-power-supply-100883513-orig.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Model</h5>
+            <h5 class="card-title">Price:XXX</h5>
+          </div>
+        </a>
+        </div>
+        <div class="card">
+          <a href="#" class="offer-link-style">
+          <img src="img/modem.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Model</h5>
+            <h5 class="card-title">Price:XXX</h5>
+          </div>
+        </a>
+        </div>
+      </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="offers-smartphone">
+        <div class="first-column">
+          <a href="#" class="offer-link-style"><div class="o-1"><img src="img/ssd1.jpg" alt="..." width="120px" height="120px"><div class="price-tag"><h5 class="card-title">Model</h5><h5 class="card-title">Price:XXX</h5></div></div></a>
+          <a href="#" class="offer-link-style"><div class="o-2"><img src="img/AMD_Radeon_RX_6800_GPU_graphics_card_price_drop_deal.jpg" alt="..." width="120px" height="120px"><div class="price-tag"><h5 class="card-title">Model</h5><h5 class="card-title">Price:XXX</h5></div></div></a>
+          <a href="#" class="offer-link-style"><div class="o-3"><img src="img/cpu.jpg"  alt="..." width="120px" height="120px" class="space-gap-2"><div class="price-tag"><h5 class="card-title">Model</h5><h5 class="card-title">Price:XXX</h5></div></div></a>
+          <a href="#" class="offer-link-style"><div class="o-4 s-screen"><img src="img/corsair-rm650-650w-80-gold-full-moduler-135mm-fanli-psu-ca1ab7.jpg"  alt="..." width="120px" height="120px"><div class="price-tag"><h5 class="card-title">Model</h5><h5 class="card-title">Price:XXX</h5></div></div></a>
+        </div>
+        <div class="second-column">
+          <a href="#" class="offer-link-style"><div class="o-1"><img src="img/AMD_Ryzen_5_2600_(39851733273).jpg" alt="..." width="120px" height="120px"><div class="price-tag"><h5 class="card-title">Model</h5><h5 class="card-title">Price:XXX</h5></div></div></a>
+          <a href="#" class="offer-link-style"><div class="o-2"><img src="img/71KPRTomMEL.jpg" alt="..." width="120px" height="120px"><div class="price-tag"><h5 class="card-title">Model</h5><h5 class="card-title">Price:XXX</h5></div></div></a>
+          <a href="#" class="offer-link-style"><div class="o-3"><img src="img/63501897b2a883.65527308_kelnfmqjphoig_500.jpg"  alt="..." width="120px" height="120px" class="space-gap-2"><div class="price-tag"><h5 class="card-title">Model</h5><h5 class="card-title">Price:XXX</h5></div></div></a>
+          <a href="#" class="offer-link-style"><div class="o-4 s-screen"><img src="img/main-qimg-309e20c5c5e761f8740106821e269d3c-lq.jpg"  alt="..." width="120px" height="120px"><div class="price-tag"><h5 class="card-title">Model</h5><h5 class="card-title">Price:XXX</h5></div></div></a>
+        </div>
+      </div>
+      <div class="m-offer"><div class="m-offer-details"><a href="#" class="m-offer-text-detail">More  <i class="fa-solid fa-angles-right" style="color: #101113;"></i></a></div></div>
+      <div class="topsales">
+        <div class="topic-line-l-1"></div><div class="t-2">Top sales</div><div class="topic-line-r-1"></div>
+      </div>
+      <div class="top-sales">
+      <div class="t-o-first-column">
+        <div class="card t-o-cards" style="width: 18rem;">
+          <a href="#" class="offer-link-style"></a>
+          <img  src="img/motherboard.png" alt="Card image cap" width="100%" height="70%">
+          <div class="card-body card-price">
+            <h5 class="card-title">Price:XXX</h5>
+          </div>
+        </a>
+        </div>
+        <div class="card t-o-cards" style="width: 18rem;">
+          <a href="#" class="offer-link-style">
+          <img class="card-img-top" src="img/hs1.jpg" alt="Card image cap" >
+          <div class="card-body card-price">
+            <h5 class="card-title">Price:XXX</h5>
+          </div>
+        </a>
+        </div>
+        <div class="card t-o-cards t-o-cards-s" style="width: 18rem;">
+          <a href="#" class="offer-link-style">
+          <img class="card-img-top" src="img/hh2.jpg" alt="Card image cap" width="100%" height="70%">
+          <div class="card-body card-price">
+            <h5 class="card-title">Price:XXX</h5>
+          </div>
+        </a>
+        </div>
+      </div>
+      <div class="t-o-second-column">
+        <div class="card t-o-cards" style="width: 18rem;">
+          <a href="#" class="offer-link-style">
+          <img class="card-img-top" src="img/cpuo.jpg" alt="Card image cap">
+          <div class="card-body card-price">
+            <h5 class="card-title">Price:XXX</h5>
+          </div>
+        </a>
+        </div>
+        <div class="card t-o-cards" style="width: 18rem;">
+          <a href="#" class="offer-link-style"></a>
+          <img class="card-img-top" src="img/fan2.jpg" alt="Card image cap" width="100%" height="70%">
+          <div class="card-body card-price">
+            <h5 class="card-title">Price:XXX</h5>
+          </div>
+        </a>
+        </div>
+        <div class="card t-o-cards t-o-cards-s" style="width: 18rem;">
+          <a href="#" class="offer-link-style"></a>
+          <img class="card-img-top" src="img/gpu3jpg.jpg" alt="Card image cap">
+          <div class="card-body card-price">
+            <h5 class="card-title">Price:XXX</h5>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="m-topsales"><div class="m-topsales-details"><a href="#" class="m-topsale-text-detail">More  <i class="fa-solid fa-angles-right" style="color: #101113;"></i></a></div></div>
+    <div class="categories">
+      <div class="topic-line-l-3"></div><div class="t-3">categories</div><div class="topic-line-r-3"></div>
+    </div>
+    <div id="carouselExampleCaptions-2" class="carousel carousel-dark slide  multipe-slider-2-size" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions-2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions-2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions-2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">   
+        <div class="carousel-item active">
+         <div class="card-group">
+          <div class="card">
+          <a href="#" class="offer-link-style">
+           <img src="img/ssd.jpg" class="card-img-top" alt="..." >
+           <div class="card-body">
+            <h5 class="card-title">SSD</h5>
+        </div>
+      </a>
+      </div>
+      <div class="card">
+        <a href="#" class="offer-link-style">
+        <img src="img/GPU.webp" class="card-img-top" alt="..." >
+        <div class="card-body">
+          <h5 class="card-title">GPU</h5>
+        </div>
+      </a>
+      </div>
+      <div class="card">
+        <a href="#" class="offer-link-style">
+        <img src="img/cpu1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CPU</h5>
+        </div>
+      </a>
+      </div>
+      <div class="card">
+        <a href="#" class="offer-link-style">
+        <img src="img/psu.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Power supplys</h5>
+        </div>
+      </div>
+    </a>
+    </div>
+        </div>
+        <div class="carousel-item">
+    <div class="card-group">
+      <div class="card">
+      <a href="#" class="offer-link-style">
+        <img src="img/ram.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Ram</h5>
+        </div>
+      </a>
+      </div>
+      <div class="card">
+        <a href="#" class="offer-link-style">
+        <img src="img/motherboard.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">motherboard</h5>
+        </div>
+      </a>
+      </div>
+      <div class="card">
+        <a href="#" class="offer-link-style">
+        <img src="img/laptops.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Laptops</h5>
+        </div>
+      </a>
+      </div>
+      <div class="card">
+        <a href="#" class="offer-link-style">
+        <img src="img/hhds.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">HDD</h5>
+        </div>
+      </a>
+      </div>
+    </div>     
+        </div>
+        <div class="carousel-item">
+    <div class="card-group">
+      <div class="card">
+        <a href="#" class="offer-link-style">
+        <img src="img/11-119-326-V01.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">PC Case</h5>
+        </div>
+      
+      </div>
+      <div class="card">
+        <a href="#" class="offer-link-style">
+        <img src="img/fans.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Fans</h5>
+        </div>
+      </a>
+      </div>
+      <div class="card">
+      <a href="#" class="offer-link-style">
+        <img src="img/monitors.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Monitors</h5>
+        </div>
+      </a>
+      </div>
+      <div class="card">
+        <a href="#" class="offer-link-style">
+        <img src="img/headset1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">headset</h5>
+        </div>
+      </a>
+      </div>
+    </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions-2" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions-2" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="categories-smartphone">
+      <div class="first-column">
+        <a href="#" class="categories-link-style"><div class="o-1"><img src="img/ssd.jpg" alt="..." width="120px" height="120px"><div class="price-tag"><h5 class="card-title">SSD</h5></div></div></a>
+        <a href="#" class="categories-link-style"><div class="o-2"><img src="img/GPU.webp" alt="..." width="120px" height="120px"><div class="price-tag"><h5 class="card-title">GPU</h5></div></div></a>
+        <a href="#" class="categories-link-style"><div class="o-3"><img src="img/CPU1.jpg"  alt="..." width="120px" height="120px" class="space-gap-2"><div class="price-tag"><h5 class="card-title">CPU</h5></div></div></a>
+        <a href="#" class="categories-link-style"><div class="o-4 s-screen"><img src="img/PSU.jpg"  alt="..." width="120px" height="120px"><div class="price-tag"><h5 class="card-title">Power supplys</h5></div></div></a>
+      </div>
+      <div class="second-column">
+        <a href="#" class="categories-link-style"><div class="o-1"><img src="img/ram.webp" alt="..." width="120px" height="120px"><div class="price-tag"><h5 class="card-title">Ram</h5></div></div></a>
+        <a href="#" class="categories-link-style"><div class="o-2"><img src="img/monitors.jpg" alt="..." width="120px" height="120px"><div class="price-tag"><h5 class="card-title">Monitor</h5></div></div></a>
+        <a href="#" class="categories-link-style"><div class="o-3"><img src="img/laptops.jpg"  alt="..." width="120px" height="120px" class="space-gap-2"><div class="price-tag"><h5 class="card-title">Laptop</h5></div></div></a>
+        <a href="#" class="categories-link-style"><div class="o-4 s-screen"><img src="img/hhds.jpg"  alt="..." width="120px" height="120px"><div class="price-tag"><h5 class="card-title">HDD</h5></div></div></a>
+      </div>
+    </div>
+    <div class="m-categories"><div class="m-categories-details"><a href="#" class="m-categories-text-detail">More  <i class="fa-solid fa-angles-right" style="color: #101113;"></i></a></div></div>
+    <div class="footer">
+      <div class="anchor-link"><div class="anchor-link-position"><a href="" class="anchor-link-styles">Back to top!</a></div></div>
+      <div class="f-container">
+      <div class="f-info">
+      <div class="list">
+        <h5 class="card-title-2">Get to Know Us</h5>
+        <ul class="list-detail-3">
+          <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+          <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+          <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+          <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+          <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+          <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+          <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+          <a href="#" class="link-style"><li class="list-detail-3">option</li></a>                
+        </ul>
+      </div>
+      <div class="list">
+        <h5 class="card-title-2">Make Money with Us</h5>
+          <ul class="list-detail-3">
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>                
+          </ul>
+        </div>
+      <div class="list">
+        <h5 class="card-title-2">Payment Products</h5>
+        <ul class="list-detail-3">
+          <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+          <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+          <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+          <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+          <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+          <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+          <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+          <a href="#" class="link-style"><li class="list-detail-3">option</li></a>                
+        </ul>
+      </div>
+      <div class="list">
+        <h5 class="card-title-2">Let Us Help You</h5>
+        <ul class="list-detail-3">
+          <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+          <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+          <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+          <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+          <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+          <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+          <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+          <a href="#" class="link-style"><li class="list-detail-3">option</li></a>                
+        </ul>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="footer-smartphone">
+        <div class="btn-f">
+          <button class="btn-dropdown" onclick="gettoknowus()"><h5 class="card-title-2">Get to Know Us</h5></button>
+          <div class="list-container" id="myDIV">
+          <ul class="list-detail-3">
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>                
+          </ul>
+        </div>
+        </div>
+        <div class="btn-f-1">
+          <button class="btn-dropdown" onclick="MakeMoneywithUs()"><h5 class="card-title-2">Make Money with Us</h5></button>
+          <div class="list-container" id="myDIV1">
+          <ul class="list-detail-3">
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>                
+          </ul>
+        </div>
+        </div>
+        <div class="btn-f-2">
+          <button class="btn-dropdown" onclick="PaymentProducts()"><h5 class="card-title-2">Payment Products</h5></button>
+          <div class="list-container" id="myDIV2">
+          <ul class="list-detail-3">
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>                
+          </ul>
+        </div>
+        </div>
+        <div class="btn-f-3">
+          <button class="btn-dropdown" onclick="LetUsHelpYou()"><h5 class="card-title-2">Let Us Help You</h5></button>
+          <div class="list-container" id="myDIV3">
+          <ul class="list-detail-3">
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>
+            <a href="#" class="link-style"><li class="list-detail-3">option</li></a>                
+          </ul>
+        </div>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9e66b040ac.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
