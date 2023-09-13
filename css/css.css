@@ -535,7 +535,8 @@
 .list-container{
     display: none;
 }
-@media (min-width: 1002px) {
+
+@media (min-width: 1001px) {
     .footer-smartphone{
         display: none;
     }
@@ -545,9 +546,15 @@
         display: none;
     }
     .footer-smartphone{
-        top:1660px;
+        top:1960px;
     }
-}   
+} 
+@media (max-width: 999px) {
+    .footer-smartphone{
+        top:1660px;
+
+    }
+} 
 @media only screen and (max-width: 1400px) {
       .signin-dropdown{
         width: 230px;
